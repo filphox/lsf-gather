@@ -3,14 +3,16 @@
 # Description:	Simple script to gather basic LSF configuration information, copy it to a directory
 #				and then compress that directory into a file to send to IBM Technical Services.
 #
-#				The script should be saved as lsf_gather.sh and set as executable. It can be run
+#				The script should be saved as lsf-gather.sh and set as executable. It can be run
 #				from anywhere the user has write permission to create the configuration archive.
 #
 # Author: Phil Fox
-# Date: 28-July-2022
 # 
+# History:
+#
+# 16-Sep-2022:	Added Ansible playbook capture and 'fdisk -l' capture (beta)
 # 28-July-2022: Improved os-release file capture
-# 11-Jan-2022: Initial version
+# 11-Jan-2022:	Initial version
 
 # LSF Primary Administrator
 LSFG_USER="lsfadmin"
